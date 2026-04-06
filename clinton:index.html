@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homes for Sale in Clinton, MI | Jesse Livingston, Realtor</title>
+<meta name="description" content="Find homes for sale in Clinton, Michigan. Jesse Livingston is a local Realtor with Heart O' The Hills Realty serving Clinton and Lenawee County.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a; --cream: #faf8f4; --warm: #f5f0e8; --accent: #2c5f4a;
+    --accent-light: #3a7a60; --gold: #c9a84c; --gold-soft: #e8d9a0;
+    --muted: #7a7368; --border: #e0dbd2; --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Raleway', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; height: 70px; display: flex; align-items: center; justify-content: space-between; }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; text-decoration: none; }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-links a { text-decoration: none; color: var(--ink); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.3s; }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta { background: var(--accent) !important; color: var(--white) !important; padding: 0.6rem 1.4rem; border-radius: 4px; }
+  .mobile-menu { display: none; cursor: pointer; font-size: 1.5rem; color: var(--ink); background: none; border: none; text-decoration: none; }
+
+  .area-hero { padding: 120px 2rem 5rem; background: linear-gradient(135deg, var(--accent) 0%, #1e4535 100%); position: relative; overflow: hidden; }
+  .area-hero::after { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat; }
+  .area-hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+  .area-hero .section-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold-soft); font-weight: 600; margin-bottom: 0.75rem; }
+  .area-hero h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 700; color: var(--white); line-height: 1.15; margin-bottom: 1.25rem; }
+  .area-hero p { color: rgba(255,255,255,0.8); font-size: 1.05rem; font-weight: 300; line-height: 1.8; max-width: 600px; }
+  .area-hero .btn-row { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+  .btn-primary { background: var(--gold); color: var(--ink); padding: 0.9rem 2rem; border: none; border-radius: 4px; font-family: 'Raleway', sans-serif; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.04em; cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-block; }
+  .btn-primary:hover { background: var(--gold-soft); transform: translateY(-1px); }
+  .btn-outline { background: transparent; color: var(--white); padding: 0.9rem 2rem; border: 1.5px solid rgba(255,255,255,0.3); border-radius: 4px; font-family: 'Raleway', sans-serif; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.04em; cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-block; }
+  .btn-outline:hover { border-color: var(--white); }
+
+  .content { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; }
+  .content h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1.25rem; color: var(--ink); }
+  .content p { color: var(--muted); font-weight: 300; line-height: 1.85; margin-bottom: 1.25rem; font-size: 0.95rem; }
+  .highlights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
+  .highlight-card { background: var(--white); border: 1px solid var(--border); border-radius: 6px; padding: 1.5rem; }
+  .highlight-card h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ink); }
+  .highlight-card p { font-size: 0.88rem; margin-bottom: 0; }
+
+  .cta-banner { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 2.5rem; text-align: center; margin: 3rem 0; }
+  .cta-banner h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .cta-banner p { color: var(--muted); font-weight: 300; margin-bottom: 1.5rem; font-size: 0.95rem; }
+  .cta-banner .btn-primary { background: var(--accent); color: var(--white); }
+  .cta-banner .btn-primary:hover { background: var(--accent-light); }
+  .cta-contact-row { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; font-size: 0.88rem; color: var(--muted); }
+  .cta-contact-row a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+  footer { background: var(--ink); color: rgba(255,255,255,0.5); padding: 3rem 2rem; text-align: center; font-size: 0.82rem; }
+  footer .footer-brand { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--white); margin-bottom: 0.5rem; font-weight: 600; }
+  footer p { margin-top: 0.3rem; line-height: 1.6; }
+  footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+
+  @media (max-width: 700px) {
+    .nav-links { display: none; }
+    .mobile-menu { display: block; }
+    .area-hero h1 { font-size: 2rem; }
+    .highlights-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Jesse Livingston<span>.</span></a>
+  <div class="nav-links">
+    <a href="tel:5175140000" style="color:var(--accent);font-weight:600;">(517) 514-0000</a>
+    <a href="/">Home</a>
+    <a href="/#areas">Areas</a>
+    <a href="/#about">About</a>
+    <a href="/#contact" class="nav-cta">Contact Me</a>
+  </div>
+  <a href="tel:5175140000" class="mobile-menu" style="font-size:0.75rem;font-weight:600;color:var(--accent);margin-right:0.5rem;">Call</a>
+  <a href="sms:5175140000" class="mobile-menu" style="font-size:0.75rem;font-weight:600;color:var(--gold);margin-right:0.75rem;">Text</a>
+  <button class="mobile-menu">☰</button>
+</nav>
+
+<section class="area-hero">
+  <div class="area-hero-inner">
+    <div class="section-label">Clinton, Michigan</div>
+    <h1>Find Your Home in Clinton</h1>
+    <p>A charming village in Lenawee County known for its historic homes, tight-knit community, and the famous Clinton Fall Festival. Gateway to the Irish Hills with small-town living at its best.</p>
+    <div class="btn-row">
+      <a href="https://www.heartothehillsrealty.com/search-results/" target="_blank" class="btn-primary">Search Clinton Homes</a>
+      <a href="tel:5175140000" class="btn-outline">Call (517) 514-0000</a>
+    </div>
+  </div>
+</section>
+
+<div class="content">
+  <h2>Why Clinton?</h2>
+  <p>Clinton is a village of about 2,500 residents that offers the kind of quiet, walkable community that's increasingly hard to find. Situated along the historic U.S. 12 Heritage Trail, the village has served as a crossroads for travelers for centuries — but today, people come and stay for the affordable housing, strong schools, and genuine sense of belonging.</p>
+  <p>The housing stock is diverse — you'll find everything from historic Victorian homes to newer subdivisions, with prices well below neighboring Washtenaw County communities like Saline or Ann Arbor. It's an area where your dollar goes further without sacrificing quality of life.</p>
+
+  <div class="highlights-grid">
+    <div class="highlight-card">
+      <h4>Schools</h4>
+      <p>Clinton Community Schools is a well-regarded district with above-average ratings. The district also participates in Schools of Choice, drawing families from surrounding areas.</p>
+    </div>
+    <div class="highlight-card">
+      <h4>Community Events</h4>
+      <p>The Clinton Fall Festival draws thousands each September with craft booths, food trucks, a petting zoo, and a Sunday parade. Summerfest and Antique Tractor Show fill Tate Park each summer.</p>
+    </div>
+    <div class="highlight-card">
+      <h4>Recreation</h4>
+      <p>Tate Park offers 80 acres of green space with soccer fields, volleyball courts, and a softball complex. The Irish Hills region is minutes away with lakes, trails, and countryside.</p>
+    </div>
+    <div class="highlight-card">
+      <h4>Character</h4>
+      <p>A walkable downtown with the historic Clinton Theater ($5 movies), Clinton Inn, and local favorites like Clinton Hometown Pizza. Clean, peaceful, and welcoming.</p>
+    </div>
+  </div>
+
+  <h2>What I Bring to Clinton Buyers & Sellers</h2>
+  <p>As someone who owns a residential-focused general contracting company and has years of commercial property management experience, I evaluate homes differently than most agents. I can walk through a property with you and point out what's solid, what needs attention, and what a renovation would realistically cost — so you make decisions with full confidence.</p>
+  <p>Whether you're buying your first home here, selling a property you've owned for years, or looking at Clinton as an investment opportunity, I'm happy to have a no-pressure conversation about your goals.</p>
+
+  <div class="cta-banner">
+    <h3>Ready to Explore Clinton?</h3>
+    <p>Let's talk about what you're looking for — no obligation, just honest guidance.</p>
+    <a href="https://www.heartothehillsrealty.com/search-results/" target="_blank" class="btn-primary">Search Listings</a>
+    <div class="cta-contact-row">
+      <span>Call: <a href="tel:5175140000">(517) 514-0000</a></span>
+      <span>Text: <a href="sms:5175140000">(517) 514-0000</a></span>
+      <span>Email: <a href="mailto:livingstonjesse517@gmail.com">livingstonjesse517@gmail.com</a></span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">Jesse Livingston, Realtor</div>
+  <p>License #6501434247 — Heart O' The Hills Realty</p>
+  <p>Broker: Thomas Ralph Darling — License #6504225038</p>
+  <p>3136 N Adrian Hwy, Adrian, MI 49221</p>
+  <p style="margin-top:1rem;"><a href="/">← Back to Home</a></p>
+</footer>
+
+</body>
+</html>
